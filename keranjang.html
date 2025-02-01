@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="uas1.css">
+</head>
+<body>
+    <header>
+        <h1>Keranjang Belanja</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="keranjang.html">Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="keranjang">
+            <h2>Daftar Belanja Anda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Total</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="keranjang-list">
+                    <!-- Item keranjang akan ditampilkan di sini -->
+                </tbody>
+            </table>
+            <h3>Total Belanja: Rp <span id="total-belanja">0</span></h3>
+            <button onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Toko Pakaian. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="uas1.js"></script>
+</body>
+</html>
